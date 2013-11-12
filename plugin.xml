@@ -10,7 +10,7 @@
   <license>MIT</license>
   
   <js-module src="SpeechRecognizer.js" name="SpeechRecognizer">
-    <clobbers target="plugins.speechrecognizer" /> 
+    <clobbers target="cordova.plugins.speechrecognizer" /> 
   </js-module>
   
   <platform name="android">
