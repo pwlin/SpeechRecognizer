@@ -76,11 +76,11 @@ public class SpeechRecognizer extends CordovaPlugin {
      * @param args Argument array with the following string args: [req code][number of matches][prompt string]
      */
     private void startSpeechRecognitionActivity(JSONArray args) {
-        int maxMatches = 0;
+        int maxMatches = 1;
         String prompt = "";
         String language = Locale.getDefault().toString();
 
-        try {
+        /*try {
             if (args.length() > 0) {
             	// Maximum number of matches, 0 means the recognizer decides
                 String temp = args.getString(0);
@@ -97,7 +97,7 @@ public class SpeechRecognizer extends CordovaPlugin {
         }
         catch (Exception e) {
             Log.e(LOG_TAG, String.format("startSpeechRecognitionActivity exception: %s", e.toString()));
-        }
+        }*/
 
         // Create the intent and set parameters
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
