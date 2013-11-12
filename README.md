@@ -9,14 +9,16 @@ Requirements
 Android 2.2 (API level 8) is required  
 Compatible with Cordova 3.0.
 
-Support
+<!--Support
 ---------------------
 For free community support, please use the issue tracker.  
 To get professional non-free support for the plugin, please contact me at gcharhon(at)smartmobilesoftware.com.
+-->
 
 Installation 
 -------------
-* Create a 'com/phonegap/plugins/speech' folder under 'src' and add [LanguageDetailsChecker.java](LanguageDetailsChecker.java) and [SpeechRecognizer.java](SpeechRecognizer.java) to it.
+    cordova plugin add [url-of-the-git-repo]
+<!--* Create a 'com/phonegap/plugins/speech' folder under 'src' and add [LanguageDetailsChecker.java](LanguageDetailsChecker.java) and [SpeechRecognizer.java](SpeechRecognizer.java) to it.
 * Add [SpeechRecognizer.js](SpeechRecognizer.js) in your www folder.  
 * Add in your index.html  
 `<script type="text/javascript" charset="utf-8" src="SpeechRecognizer.js"></script>`  
@@ -27,10 +29,12 @@ Installation
       <param name="android-package" value="com.phonegap.plugins.speech.SpeechRecognizer"/>  
 </feature> 
 ```    
+-->
 
 Usage
 -------
-
+    cordova.plugins.speechrecognizer.startRecognize(success, error);
+<!--
 #### Start recognition
 Show the recognition dialog and get the recognized sentences
 
@@ -97,7 +101,7 @@ Full example
     </body>
 </html>
 ```
-
+-->
 License
 ----------------
 
